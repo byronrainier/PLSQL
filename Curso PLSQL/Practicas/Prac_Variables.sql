@@ -1,0 +1,15 @@
+SET SERVEROUTPUT ON;
+DECLARE
+    W_NUM1  NUMBER;
+    W_NUM2  NUMBER;
+    W_SUM   NUMBER;
+BEGIN
+    
+    W_NUM1  := NULL;
+    W_NUM2  := 25;
+    
+    W_SUM := W_NUM1 + W_NUM2;
+    
+    DBMS_OUTPUT.PUT_LINE(W_SUM);
+    
+END;

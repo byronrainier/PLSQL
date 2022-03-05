@@ -1,0 +1,26 @@
+SET SERVEROUTPUT ON;
+DECLARE
+    A NUMBER := 103;
+    B NUMBER;
+BEGIN
+    B:= NOMINA.calcular_nomina(A);
+    
+    DBMS_OUTPUT.PUT_LINE(B);
+END;
+/
+SET SERVEROUTPUT ON;
+DECLARE
+    A NUMBER := 103;
+    B NUMBER;
+    D NUMBER;
+BEGIN
+
+    D:=8;
+    B:= NOMINA.calcular_nomina(A,D);
+    
+    DBMS_OUTPUT.PUT_LINE(B);
+END;
+
+/
+
+SELECT * FROM EMPLOYEES;
